@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 # url - banco de dados
 
-URL_NEON = f"postgresql://neondb_owner:{DB_PASSWORD}@ep-proud-queen-amw2v2mz.c-5.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+URL_NEON = "postgresql://neondb_owner:DB_PASSWORD@ep-proud-queen-amw2v2mz.c-5.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 
 engine = create_engine(URL_NEON, pool_pre_ping=True)
 Session = sessionmaker(bind=engine)
